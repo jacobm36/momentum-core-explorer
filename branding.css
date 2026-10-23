@@ -1,0 +1,32 @@
+:root {
+  --bg: #05060c;
+  --surface: #0a0c16;
+  --line: #1c2140;
+  --text: #eef0fa;
+  --muted: #a1a8c5;
+  --cyan: #22b8ff;
+  --pink: #ff6a2b;
+  --purple: #8a4dff;
+}
+.brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+.brand-logo { display: block; width: 180px; max-width: 100%; height: auto; }
+.brand-caption { color: var(--muted); font-size: 11px; letter-spacing: .12em; }
+.intro h1 em {
+  background: linear-gradient(90deg, var(--cyan), var(--purple) 45%, var(--pink));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.sidebar { background: #080a13; }
+.section-copy, .inspector p, .privacy-row p { line-height: 1.7; }
+.decision-controls { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.decision-controls label, .decision-controls select { min-width: 0; max-width: 100%; }
+@media (max-width: 760px) {
+  .brand-logo { width: 140px; }
+  .decision-controls { grid-template-columns: 1fr; }
+}
