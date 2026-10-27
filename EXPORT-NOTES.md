@@ -1,5 +1,15 @@
 # Export verification
 
+- Content refresh: 26 October 2026. Eleven-entry catalog copied from pinned
+  distribution revision `63669bfc49f2ed72f79286dd6ba370f2cb8a6e93`,
+  including Duke 0.2.0 and current arcade revisions. Launcher source/releases
+  are public; package authoring remains private. Signed support-data refresh
+  is newer source work and is not included in the published preview.2 ZIP.
+  No game packages, launcher behavior or signing secrets were changed/copied.
+  Both Node checks and an exact catalog comparison passed. Browser checks
+  covered all eight sections at 1440/390 pixels, Duke filtering/selection and
+  the source-versus-published-release distinction.
+  Earlier checks below describe the October 23 export, not new browser results.
 - Export date: 23 October 2026.
 - Recovered the existing version 2 source, rather than recreating the application.
 - Source commit: `0577b0bf156dab443a6b1354fe2dfdd25f65c2f0`, matching the saved version 2 source record.

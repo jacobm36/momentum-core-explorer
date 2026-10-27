@@ -4,7 +4,7 @@
 
 **Your games. Your Linux arcade. Less setup. More PLAY.**
 
-Updated copy of the exported version 2 application. Existing structure and interactions are retained, with targeted accuracy and Momentum branding updates reviewed on 23 October 2026. `dist/` contains the deployable source and all required assets. There is no build step, package installation, backend, API key or account requirement.
+Updated copy of the exported version 2 application. Existing structure and interactions are retained, with targeted content updates reviewed on 26 October 2026. `dist/` contains the deployable source and all required assets. There is no build step, package installation, backend, API key or account requirement.
 
 ## This repository's deployment
 
@@ -61,6 +61,9 @@ node check.mjs
 node check-ui.mjs
 ```
 
+Optionally set `MOMENTUM_CATALOG` to a local distribution catalog path when
+running `check.mjs` to verify every pinned catalog field against that file.
+
 These checks validate graph/model data, navigation wiring, filters, package tabs, engine scenarios and SHA-256 behavior. The UI test uses a mock DOM; it is not browser visual testing.
 
 The checks have been updated for the refreshed snapshot and corrected engine
@@ -79,7 +82,7 @@ installations or game launches were repeated for this documentation work.
 - `dist/style.css`: original vanilla CSS and responsive styling.
 - `dist/app.mjs`: diagram, navigation, walkthroughs and other interactions.
 - `dist/model.mjs`: components, relationships, flows, privacy data and hashing.
-- `dist/review.mjs`: pinned project review and ten-game catalog snapshot.
+- `dist/review.mjs`: pinned project review and eleven-game catalog snapshot.
 - `dist/decisions.mjs`: illustrative runtime decision model.
 - `dist/.nojekyll`: GitHub Pages static-serving marker added for this export.
 
@@ -90,7 +93,7 @@ The catalog and technical narrative are a dated snapshot, not a live connection 
 ## Content review
 
 Reviewed against the pinned launcher, package and distribution revisions shown
-in the application's source section on 23 October 2026. The ten catalog entries
+in the application's source section on 26 October 2026. The eleven catalog entries
 retain their exact versions, URLs, sizes and hashes. This documentation update
 does not repeat package installation or game acceptance tests.
 
@@ -99,9 +102,20 @@ and reported successful gameplay remain distinct claims. Engine decisions
 illustrate new installations; existing receipts never silently migrate.
 Flycast does not use the alternative-scope discovery wired for UZDoom and MAME.
 Shortcut discovery includes user/system menus and Flatpak/Snap exports.
-Public readers can follow distribution links; private source revisions require
-access. The app itself adds no analytics, but its hosting service may log requests
+Public readers can follow launcher source/release and distribution links;
+private package-authoring revisions require access. The app itself adds no analytics, but its hosting service may log requests
 or add authentication/cookies.
+
+The snapshot now includes Duke 0.2.0, the owner's revised description, bundled
+EDuke32/source delivery and scoped acceptance, plus the current arcade revisions.
+Signed compatibility refresh is described as newer source work, not a feature
+of the published preview.2 ZIP. Existing packages need no rebuild. New engine
+behavior and title-specific adapter restrictions may still require launcher code.
+The Explorer fetches no support records and contains no signing secrets.
+For this refresh, both Node checks passed, including an exact catalog comparison.
+Browser checks exercised all eight sections at 1440 and 390 pixels without
+page-level horizontal overflow, Duke selection through the store filter, and
+the source-versus-release explanation.
 
 ## Export integrity and privacy
 

@@ -17,7 +17,9 @@ q('#example-game').value='la';q('#engine-package').value='the-house-of-the-dead-
 await import('./dist/app.mjs');
 assert.equal(queryAll('.node').length,14);assert.equal(queryAll('.edge').length,14);assert(q('#inspector').innerHTML.includes('Python backend'));
 q('#node-resolver').click();assert(q('#inspector').innerHTML.includes('Runtime selection'));
-queryAll('[data-view]').find(e=>e.dataset.view==='store').click();assert(q('#store').classList.contains('active'));assert.equal(q('#store-list').children.length,10);
+queryAll('[data-view]').find(e=>e.dataset.view==='store').click();assert(q('#store').classList.contains('active'));assert.equal(q('#store-list').children.length,11);
+q('#store-list').children.find(e=>e.dataset.id==='duke-nukem-3d').click();assert(q('#store-detail').innerHTML.includes('Alien invaders'));assert(q('#store-detail').innerHTML.includes('preview.2'));
+assert(q('#source-pins').innerHTML.includes('momentum-core-launcher (public)'));
 queryAll('[data-pillar]').find(e=>e.dataset.pillar==='openbor').click();assert.equal(q('#store-list').children.length,2);assert(q('#store-detail').innerHTML.includes('Marvel'));
 q('#engine-scenario').value='unsupported';q('#engine-scenario').onchange();assert(q('#engine-result').innerHTML.includes('ISOLATED FALLBACK'));
 q('#engine-package').value='virtua-cop-2';q('#engine-package').onchange();assert(q('#engine-result').innerHTML.includes('BLOCKED'));

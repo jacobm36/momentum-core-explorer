@@ -1,11 +1,35 @@
 export const review = {
-  "reviewDate": "2026-10-23",
+  "reviewDate": "2026-10-26",
   "pins": {
-    "momentum-core-launcher": "22f0cb0d08280b1502dd065d9d710885cf0004b6",
-    "momentum-packages": "7a4472094f2820a21167b86a3d51745872b7720a",
-    "momentum-distribution": "0d403272ccb66221c792acb86a4e381d3dd15f4c"
+    "momentum-core-launcher": "4f5b1abfc9f24b177f21df3a3809f53ed25e6d5d",
+    "momentum-packages": "a3ac86c78fd974cbf7b74be265bb8fc9d6b53b3e",
+    "momentum-distribution": "63669bfc49f2ed72f79286dd6ba370f2cb8a6e93"
   },
   "catalog": [
+    {
+      "id": "duke-nukem-3d",
+      "version": "0.2.0",
+      "name": "Duke Nukem 3D",
+      "description": "Alien invaders, outrageous weapons, and attitude to spare. Blast through Los Angeles streets, space stations, and secret-filled strongholds as Earth’s wisecracking one-man army. Shrink enemies, set pipe-bomb traps, and strap on a jetpack to reach hidden routes. Interactive scenery, inventive weapons, and explosive firefights make exploration as entertaining as clearing the next room.",
+      "pillar": "boomer-shooters",
+      "runtime": "EDuke32",
+      "icon_url": "https://raw.githubusercontent.com/jacobm36/momentum-distribution/main/artwork/duke-nukem-3d.png",
+      "url": "https://github.com/jacobm36/momentum-distribution/releases/download/duke-nukem-3d-0.2.0/duke-nukem-3d-0.2.0.zip",
+      "sha256": "dea60f2baedf3d0c59c3c1570c7363c0bc23389ff050e117e81668a208c7adfd",
+      "digest": "sha256:7624acef827b8cd2944d8df57b35ade79dd13437dfb539df269a24c8f677824c",
+      "size": 292286729,
+      "platform": {
+        "os": "ubuntu",
+        "releases": [
+          "24.04"
+        ],
+        "architectures": [
+          "x86_64"
+        ]
+      },
+      "input": "Registered original or Atomic DUKE3D.GRP; original game not bundled. Requires launcher preview.2 or newer.",
+      "acceptance": "Owner reported the candidate looks amazing and approved publication on 25 October. Final description/documentation changes do not change gameplay payloads. Synthetic installer lifecycle checks are separate; full campaign and individual input/audio/save-relaunch checks are not claimed."
+    },
     {
       "id": "time-crisis-ii",
       "version": "0.1.1",
@@ -80,16 +104,16 @@ export const review = {
     },
     {
       "id": "star-wars-trilogy-arcade",
-      "version": "0.2.1",
+      "version": "0.2.2",
       "name": "Star Wars Trilogy Arcade",
-      "description": "Stay on target. Fullscreen arcade setup with mouse aim, confirmed on the owner's debug laptop. Bring swtrilgy.zip; stock credits, no free-play preset. Requires an up-to-date Momentum launcher.",
+      "description": "Stay on target. Fullscreen mouse-aim setup with an owner-confirmed Free Play seed, portrait art, screenshot and video. Existing NVRAM is preserved. Bring swtrilgy.zip. Requires the current privately supplied Momentum launcher; new-package gameplay confirmation remains separate.",
       "pillar": "mouse-arcade",
       "runtime": "Supermodel",
       "icon_url": "https://raw.githubusercontent.com/jacobm36/momentum-distribution/main/artwork/star-wars-trilogy-arcade.png",
-      "url": "https://github.com/jacobm36/momentum-distribution/releases/download/star-wars-trilogy-arcade-0.2.1/star-wars-trilogy-arcade-0.2.1.zip",
-      "sha256": "f049015943cfd569820d3eebca9e8366efb294ea0a88340f1559e9646ff5caf4",
-      "digest": "sha256:3ce37cec1672d8dd96e842c418e7c890bebc89413b07c6d2aeb78eea7b67ac26",
-      "size": 251980,
+      "url": "https://github.com/jacobm36/momentum-distribution/releases/download/star-wars-trilogy-arcade-0.2.2/star-wars-trilogy-arcade-0.2.2.zip",
+      "sha256": "7a0d00c72f34c33e3ec354914b5fce27e749b0856cb4b96fae977d5c302b0c2e",
+      "digest": "sha256:e9afb71a269848ef0b0e100f00b9f4f42060850d1e996e0b77cbcb05abdec4bf",
+      "size": 4218903,
       "platform": {
         "os": "ubuntu",
         "releases": [
@@ -100,20 +124,20 @@ export const review = {
         ]
       },
       "input": "swtrilgy.zip, kept zipped",
-      "acceptance": "Owner debug-laptop acceptance recorded. Stock credits, not a free-play preset. Other hardware not certified."
+      "acceptance": "0.2.2 includes an absent-only owner Free Play NVRAM seed, Grid, screenshot and video. Existing NVRAM is preserved. Earlier owner gameplay and later package acceptance do not certify every action or other hardware."
     },
     {
       "id": "the-house-of-the-dead-2",
-      "version": "0.3.0",
+      "version": "0.3.1",
       "name": "The House of the Dead 2",
-      "description": "Fullscreen mouse-lightgun setup with tested Flycast reuse or separately approved isolated fallback. Bring USA CUE and matching BIN tracks. Existing engines and profiles stay untouched. Requires an up-to-date Momentum launcher.",
+      "description": "Fullscreen mouse-lightgun setup with an absent-only right-click reload preset, portrait art, screenshot and video. Tested Flycast reuse or separately approved isolated fallback; personal mappings and saves stay intact. Bring USA CUE and matching BIN tracks. Requires the current privately supplied Momentum launcher.",
       "pillar": "mouse-arcade",
       "runtime": "Flycast",
       "icon_url": "https://raw.githubusercontent.com/jacobm36/momentum-distribution/main/artwork/the-house-of-the-dead-2.png",
-      "url": "https://github.com/jacobm36/momentum-distribution/releases/download/the-house-of-the-dead-2-0.3.0/the-house-of-the-dead-2-0.3.0.zip",
-      "sha256": "93f3685c02ae8d6e1b14143319f5c392f65b9aaad074ab7a701b3d21aa808ecf",
-      "digest": "sha256:5dba413b80ed095c18933b55caf06b86d3c90bac15b7f95a4fa18b999e88d659",
-      "size": 173488,
+      "url": "https://github.com/jacobm36/momentum-distribution/releases/download/the-house-of-the-dead-2-0.3.1/the-house-of-the-dead-2-0.3.1.zip",
+      "sha256": "14a687595f7169c666b577d74fe638f161cf44d54a041d874b647491e05ec7b6",
+      "digest": "sha256:cb33b6695d791d03fa19b6bde97c55dc27b2d82716d9640f2330fe98789dcf9c",
+      "size": 5950862,
       "platform": {
         "os": "ubuntu",
         "releases": [
@@ -124,7 +148,7 @@ export const review = {
         ]
       },
       "input": "USA CUE plus all referenced BIN tracks",
-      "acceptance": "Owner-reported r6 candidate acceptance plus exact installer/runtime evidence. No universal input or campaign certification."
+      "acceptance": "Owner-reported r6 candidate acceptance plus exact installer/runtime evidence. No universal input or campaign certification. Current revision adds absent-only owner right-click reload mappings and presentation media; personal bindings remain intact. Owner reported the revised packages work; individual checklist coverage is not claimed."
     },
     {
       "id": "brutal-doom",
@@ -200,16 +224,16 @@ export const review = {
     },
     {
       "id": "l-a-machineguns",
-      "version": "0.2.2",
+      "version": "0.2.3",
       "name": "L.A. Machineguns",
-      "description": "Fullscreen mouse aiming with a clean first-launch calibration seed, confirmed through fresh installation on the owner's debug laptop. Existing NVRAM preserved. Bring Japan lamachin.zip. Requires an up-to-date Momentum launcher.",
+      "description": "Fullscreen mouse aiming with an owner-confirmed working Free Play/calibration seed, portrait art, screenshot and video. Existing NVRAM is preserved. Bring Japan lamachin.zip. Requires the current privately supplied Momentum launcher; new-package gameplay confirmation remains separate.",
       "pillar": "mouse-arcade",
       "runtime": "Supermodel",
       "icon_url": "https://raw.githubusercontent.com/jacobm36/momentum-distribution/main/artwork/l-a-machineguns.png",
-      "url": "https://github.com/jacobm36/momentum-distribution/releases/download/l-a-machineguns-0.2.2/l-a-machineguns-0.2.2.zip",
-      "sha256": "1155287bf2fc734b49e80d1abf6dff3fce42f90ab90dd32916902a2694d004bb",
-      "digest": "sha256:a6d1d7ca1110176d5d966f58938c9e356e4025c7fc3633f35e9b0ea44dadefad",
-      "size": 954064,
+      "url": "https://github.com/jacobm36/momentum-distribution/releases/download/l-a-machineguns-0.2.3/l-a-machineguns-0.2.3.zip",
+      "sha256": "1ea25eb7758717d9e23b96e98e409dd4489a0f3edb11b598d9c5a655e7f12d8e",
+      "digest": "sha256:43cfd52847a63dce24a1382c530e518df304b2a6e532f641a9813d92e76c7499",
+      "size": 4780087,
       "platform": {
         "os": "ubuntu",
         "releases": [
@@ -220,20 +244,20 @@ export const review = {
         ]
       },
       "input": "Japan lamachin.zip, kept zipped",
-      "acceptance": "Clean calibration restored mouse aiming on reference and debug laptops. Existing NVRAM remains untouched; other layouts not certified."
+      "acceptance": "Owner reported the updated package works, but clarified that Free Play was not actually set; Free Play remains unconfirmed. Existing NVRAM is preserved. No new campaign or other-machine certification."
     },
     {
       "id": "virtua-cop-2",
-      "version": "0.1.2",
+      "version": "0.1.3",
       "name": "Virtua Cop 2",
-      "description": "Mouse-aimed Virtua Cop 2 setup on Flycast v2.7. The owner reports that it works great on their setup. Bring the Japanese GDI and all 39 matching tracks; 0.1.x migrations retain the old folder and separate state. Requires an up-to-date Momentum launcher.",
+      "description": "Mouse-aimed Virtua Cop 2 on Flycast v2.7, now with an absent-only right-click reload preset, portrait art, screenshot and video. Existing mappings and saves are preserved. Bring the Japanese GDI and all 39 matching tracks. Requires the current privately supplied Momentum launcher.",
       "pillar": "mouse-arcade",
       "runtime": "Flycast v2.7",
       "icon_url": "https://raw.githubusercontent.com/jacobm36/momentum-distribution/main/artwork/virtua-cop-2.png",
-      "url": "https://github.com/jacobm36/momentum-distribution/releases/download/virtua-cop-2-0.1.2/virtua-cop-2-0.1.2.zip",
-      "sha256": "1c307b3ff5e10755a9b8d4cbb5ae77f15b04d9348133308e8d0c1de5f11db1c2",
-      "digest": "sha256:c2c3709af88bff503142e96a55e49eac50c9d9fca51a3f7e8b6be4936c7bb7a9",
-      "size": 217534,
+      "url": "https://github.com/jacobm36/momentum-distribution/releases/download/virtua-cop-2-0.1.3/virtua-cop-2-0.1.3.zip",
+      "sha256": "a2bb8c13b0b5a5d2a4435be6b719c4ab58596b0c1b8545a4feb0e8f469d34149",
+      "digest": "sha256:fd90be3e89905fe726854031131cdae969aec98a99c6dde29871c65b511a9b9a",
+      "size": 5199237,
       "platform": {
         "os": "ubuntu",
         "releases": [
@@ -244,7 +268,7 @@ export const review = {
         ]
       },
       "input": "Japan GDI plus all 39 referenced tracks",
-      "acceptance": "Owner gameplay acceptance reported 15 October. Individual checklist and other hardware not reported."
+      "acceptance": "Owner gameplay acceptance reported 15 October. Individual checklist and other hardware not reported. Current revision adds absent-only owner right-click reload mappings and presentation media; personal bindings remain intact. Owner reported the revised packages work; individual checklist coverage is not claimed."
     }
   ],
   "changes": [
@@ -253,8 +277,8 @@ export const review = {
       "Review game shortcuts from user, system, Flatpak and Snap application menus, add a manual command, or browse curated packages. Emulators are excluded by default with an explicit inclusion option. Store specialties do not restrict the library."
     ],
     [
-      "Ten current store entries",
-      "Time Crisis II 0.1.1 joins OpenBOR, Mouse Arcade and Boomer Shooters, with pinned MAME 0.289. This is a dated snapshot, not a live catalog."
+      "Eleven current store entries",
+      "Duke Nukem 3D 0.2.0 joins the store with exact bundled EDuke32, matching source, upscale textures, voxels, SC-55 music, Grid art and a gameplay screenshot. Bring registered original/Atomic DUKE3D.GRP and use launcher preview.2 or newer. This is a dated snapshot, not a live catalog."
     ],
     [
       "Evidence-backed engine selection",
@@ -277,8 +301,12 @@ export const review = {
       "Virtua Cop 2 0.1.2 copies into its package-ID folder without deleting the old folder. Intent journals and receipts support reconciliation instead of a universal rollback promise."
     ],
     [
-      "Private launcher, public packages",
-      "Current launcher and authoring development remain private. Public release ZIPs and catalog are separate. Runtime-only delivery excludes development tools without discarding compatibility evidence."
+      "Public launcher, separate game packages",
+      "Launcher source and the consolidated public preview are now public. Preview.2 includes Duke support; game installers remain separate downloads and package authoring remains private. Runtime-only delivery excludes personal data and developer tools."
+    ],
+    [
+      "Signed support data: source implementation",
+      "The newer launcher source verifies signed compatibility records and caches verified data for offline reuse, retaining built-in records and exact preflight evidence checks. This is not included in the published preview.2 ZIP. Compatible future launcher releases can recognize newly approved packages without rebuilding existing game ZIPs. New engine behavior and some title-specific adapters still require code changes; this is not a universal plugin system. No signing secrets are part of this Explorer."
     ],
     [
       "Launcher presentation and artwork",
@@ -288,7 +316,11 @@ export const review = {
   "caveats": [
     [
       "Summary counts are not the catalog",
-      "The pinned catalog contains ten games. Short launcher/user-guide tables still list fewer titles. This snapshot uses catalog.json for store membership, not those summaries."
+      "The pinned catalog contains eleven games. This snapshot uses catalog.json for store membership, not older summary counts or withdrawn release pages."
+    ],
+    [
+      "Source support is not released support",
+      "The public preview.2 launcher predates signed support-data refresh. The implementation and signed distribution data are in the pinned source repositories; no newer launcher ZIP is claimed here. Package formats and existing game ZIPs are unchanged."
     ],
     [
       "Brutal Doom recipe changed",
