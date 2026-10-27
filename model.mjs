@@ -3,7 +3,7 @@ export const nodes = [
     "id": "catalog",
     "label": "Public catalog",
     "kind": "REMOTE",
-    "sub": "10 store entries / pinned snapshot",
+    "sub": "11 store entries / pinned snapshot",
     "x": 64,
     "y": 56,
     "scope": "Public distribution",
@@ -157,7 +157,7 @@ export const nodes = [
       "Exact launcher evidence and helper bindings",
       "Anonymous download verification before promotion"
     ],
-    "detail": "A new package may require an up-to-date Momentum launcher with matching exact-byte evidence. A runtime-only launcher bundle retains this evidence but excludes developer tests/tools. Public packages do not imply a public current launcher."
+    "detail": "Public preview.2 includes Duke support. Newer source adds signed support-data refresh and offline verified caching, but that code is not in the preview.2 ZIP. Compatible future launchers can recognize new exact package evidence without rebuilding game ZIPs; new engine behavior may still require launcher code. Runtime-only delivery excludes developer tools."
   },
   {
     "id": "source",
@@ -230,7 +230,7 @@ export const flows = {
     [
       "catalog",
       "Choose a curated setup",
-      "Select a supported store title. This pinned catalog snapshot groups ten entries by pillar and runtime.",
+      "Select a supported store title. This pinned catalog snapshot groups eleven entries by pillar and runtime.",
       "catalog.json \u2192 immutable release ZIP"
     ],
     [
